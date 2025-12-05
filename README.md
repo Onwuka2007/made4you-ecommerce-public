@@ -1,3 +1,6 @@
+## Note
+This is the public-facing version of my project. The full application lives in a private repository.
+
 # Made4You — Nigerian Fashion E-Commerce UI
 
 Made4You is a modern, responsive e-commerce front-end built to showcase unique fashion from Nigerian creators. It features Firebase-powered authentication, clean navigation, and a mobile-first shopping experience.
@@ -13,6 +16,3 @@ Made4You is a modern, responsive e-commerce front-end built to showcase unique f
 - **Frontend:** HTML5, Tailwind CSS, JavaScript (ES Modules)  
 - **Auth:** Firebase Authentication  
 - **Deployment:** Vercel
-
-## Note
-This is only the public repository
