@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+  </head>
+  <body class="font-display">
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col bg-background-light dark:bg-[#111111] group/design-root overflow-x-hidden"
+    >
+      <div class="flex min-h-screen">
+        <!-- Side navbar -->
+        <aside class="flex h-screen ...">...</aside>
+
+        <!-- Main content -->
+        <main class="flex-1 ...">
+          <!-- Header -->
+          <header
+            class="flex items-center justify-between whitespace-nowrap border-b border-solid border-stone-200 dark:border-stone-800 px-10 py-4 bg-background-light dark:bg-[#111111]"
+          >
+            <div class="flex items-center gap-4">
+              <p
+                class="text-black dark:text-white text-xl font-bold leading-tight"
+              >
+                Dashboard
+              </p>
+            </div>
+            <div class="flex flex-1 justify-end gap-6 items-center">
+              <label class="flex flex-col min-w-40 h-10 max-w-sm">
+                <div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+                  <div
+                    class="text-stone-400 dark:text-stone-500 flex bg-stone-100 dark:bg-background-dark items-center justify-center pl-3 rounded-l-lg border-y border-l border-stone-200 dark:border-stone-800"
+                  >
+                    <span class="material-symbols-outlined">search</span>
+                  </div>
+                  <input
+                    class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-black dark:text-white focus:outline-0 focus:ring-0 border-stone-200 dark:border-stone-800 bg-stone-100 dark:bg-background-dark focus:border-stone-300 dark:focus:border-stone-700 h-full placeholder:text-stone-500 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal"
+                    placeholder="Search anything..."
+                    value=""
+                  />
+                </div>
+              </label>
+
+              ...
+            </div>
+          </header>
+
+          ...
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

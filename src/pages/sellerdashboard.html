@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Seller Dashboard</title>
+    <link rel="stylesheet" href="../output.css" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-display bg-background-light">
+    <div
+      class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden"
+    >
+      <div class="flex flex-col md:flex-row">
+        <aside
+          class="hidden md:flex fixed top-0 left-0 w-64 h-screen flex-col border-r border-stone-200 bg-white p-4 z-10"
+        >
+          <div class="flex flex-col gap-4 flex-1">
+            <div class="flex items-center gap-3">
+              <div
+                class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10"
+                data-alt="Black and white abstract pattern"
+                style="
+                  background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDIjo97oHKColdeUJacsbaOkgA1xbJPcs_zLHYcj8pIYOUpPLBGLHwJSN9wIaP7BHMcKlgoGMJnwUiVmflzFEp-hvY8Oukl8s9x1QcbtfHHUlrQouMTN9X331XaRE1do4sJ3eXWAfWJ5mGZWKQhbNayVf__VTR71FMCaxbQYXw8Ffct3MZa_Rl3rJ7_qIVVLnBTmJZTnzHwVenS8NS1Di2qWXjjCGcmneRUvchIiVNnwUludN3EJZrFSetgvmlOubyn5GcI3msDiE8D');
+                "
+              ></div>
+              <div class="flex flex-col">
+                <h1 class="text-black text-base font-medium leading-normal">
+                  The Chic Boutique
+                </h1>
+                <p class="text-stone-500 text-sm font-normal leading-normal">
+                  Seller Account
+                </p>
+              </div>
+            </div>
+
+            <nav class="flex flex-col gap-2 mt-4" id="sidebar-nav">
+              <button
+                class="sidebar-tab flex items-center gap-3 px-3 py-2 rounded-lg bg-stone-100 active"
+                data-tab-target="dashboard-pane"
+              >
+                <span class="material-symbols-outlined fill text-black"
+                  >dashboard</span
+                >
+                <p class="text-black text-sm font-medium leading-normal">
+                  Dashboard
+                </p>
+              </button>
+
+              <button
+                class="sidebar-tab flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-stone-100"
+                data-tab-target="products-pane"
+              >
+                <span class="material-symbols-outlined text-black"
+                  >inventory_2</span
+                >
+                <p class="text-black text-sm font-medium leading-normal">
+                  Products
+                </p>
+              </button>
+
+              <button
+                class="sidebar-tab flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-stone-100"
+                data-tab-target="orders-pane"
+              >
+                <span class="material-symbols-outlined text-black"
+                  >receipt_long</span
+                >
+                <p class="text-black text-sm font-medium leading-normal">
+                  Orders
+                </p>
+              </button>
+
+              <button
+                class="sidebar-tab flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-stone-100"
+                data-tab-target="analytics-pane"
+              >
+                <span class="material-symbols-outlined text-black"
+                  >bar_chart</span
+                >
+                <p class="text-black text-sm font-medium leading-normal">
+                  Analytics
+                </p>
+              </button>
+
+              <button
+                class="sidebar-tab flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-stone-100"
+                data-tab-target="profile-pane"
+              >
+                <span class="material-symbols-outlined text-black">person</span>
+                <p class="text-black text-sm font-medium leading-normal">
+                  Profile
+                </p>
+              </button>
+            </nav>
+          </div>
+          <div class="flex flex-col gap-1 group">
+            <a
+              class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-red-100 group-hover:border border-red-400"
+              href="#"
+            >
+              <span class="material-symbols-outlined text-black group-hover:text-red-400">logout</span>
+              <p class="text-black group-hover:text-red-400 text-sm font-medium leading-normal">
+                Logout
+              </p>
+            </a>
+          </div>
+        </aside>
+
+        <main class="flex-1 p-4 md:p-8 md:ml-64">
+          <div class="flex justify-between items-center mb-6 mdhidden">
+            <h1 class="text-xl font-bold">Seller Dashboard</h1>
+            <button
+              id="mobile-menu-button"
+              class="p-2 rounded-lg hover:bg-stone-200"
+            >
+              <span class="material-symbols-outlined text-black">menu</span>
+            </button>
+          </div>
+
+          <div class="max-w-7xl mx-auto tab-content">
+            <div id="dashboard-pane" class="tab-pane active">
+              <div
+                class="flex flex-wrap justify-between items-center gap-4 mb-8"
+              >
+                <div class="flex min-w-72 flex-col gap-2">
+                  <p
+                    class="text-black text-3xl md:text-4xl font-black leading-tight tracking-[-0.033em]"
+                  >
+                    Hello, User
+                  </p>
+                  <p
+                    class="text-stone-500 text-sm md:text-base font-normal leading-normal"
+                  >
+                    Here is a summary of your store's activity.
+                  </p>
+                </div>
+                <button
+                  class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center bg-black justify-center overflow-hidden rounded-lg h-10 md:h-12 px-4 md:px-6 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-stone-700"
+                >
+                  <span class="truncate">Add New Product</span>
+                </button>
+              </div>
+
+              <!-- Summary Section -->
+              <div
+                id="summary"
+                class="flex flex-col md:flex-row gap-4 my-8 w-full justify-between"
+              ></div>
+
+              <!-- Recent Products Section -->
+              <h2
+                class="text-black text-xl md:text-[22px] font-bold leading-tight tracking-[-0.015em] mb-4"
+              >
+                Recent Products
+              </h2>
+
+              <div class="container">
+                <div
+                  class="overflow-x-auto rounded-xl border border-stone-200 bg-white"
+                >
+                  <table class="min-w-full">
+                    <thead>
+                      <tr class="bg-white border-b border-b-stone-200">
+                        <th
+                          class="px-4 md:px-6 py-3 text-left text-black text-xs md:text-sm font-medium leading-normal"
+                        >
+                          Product
+                        </th>
+                        <th
+                          class="px-4 md:px-6 py-3 text-left text-black text-xs md:text-sm font-medium leading-normal"
+                        >
+                          Price
+                        </th>
+                        <th
+                          class="px-4 md:px-6 py-3 text-left text-black text-xs md:text-sm font-medium leading-normal"
+                        >
+                          Stock
+                        </th>
+                        <th
+                          class="px-4 md:px-6 py-3 text-left text-black text-xs md:text-sm font-medium leading-normal"
+                        >
+                          Status
+                        </th>
+                        <th
+                          class="px-4 md:px-6 py-3 text-left text-stone-500 text-xs md:text-sm font-medium leading-normal"
+                        >
+                          Actions
+                        </th>
+                      </tr>
+                    </thead>
+                    <tbody id="recent-products" class="bg-white"></tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div id="products-pane" class="tab-pane hidden">
+              <h1 class="text-3xl font-bold">Products Management</h1>
+            </div>
+
+            <div id="orders-pane" class="tab-pane hidden">
+              <h1 class="text-3xl font-bold">Orders</h1>
+            </div>
+
+            <div id="analytics-pane" class="tab-pane hidden">
+              <h1 class="text-3xl font-bold">Analytics</h1>
+            </div>
+
+            <div id="profile-pane" class="tab-pane hidden">
+              <h1 class="text-3xl font-bold">Profile Settings</h1>
+            </div>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="../js/sellerDashboard.js"></script>
+  </body>
+</html>
